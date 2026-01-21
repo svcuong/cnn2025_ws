@@ -1,0 +1,2 @@
+ai_perception:bringup:interface:localization:monitoring:navigation:sensors:sync
+-DCATKIN_DEVEL_PREFIX=/home/cuong/cnn2025_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cuong/cnn2025_ws/install -G Unix Makefiles

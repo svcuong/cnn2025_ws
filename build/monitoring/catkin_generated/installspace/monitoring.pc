@@ -1,0 +1,8 @@
+prefix=/home/cuong/cnn2025_ws/install
+
+Name: monitoring
+Description: Description of monitoring
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

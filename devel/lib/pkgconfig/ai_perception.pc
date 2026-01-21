@@ -1,0 +1,8 @@
+prefix=/home/cuong/cnn2025_ws/devel
+
+Name: ai_perception
+Description: Description of ai_perception
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
