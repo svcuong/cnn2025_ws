@@ -67,14 +67,14 @@ set(sync_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(sync_SOURCE_PREFIX /home/cuong/cnn2025_ws/src/sync)
-  set(sync_DEVEL_PREFIX /home/cuong/cnn2025_ws/devel)
+  set(sync_SOURCE_PREFIX /home/xuanbo/cnn2025_ws/src/sync)
+  set(sync_DEVEL_PREFIX /home/xuanbo/cnn2025_ws/devel)
   set(sync_INSTALL_PREFIX "")
   set(sync_PREFIX ${sync_DEVEL_PREFIX})
 else()
   set(sync_SOURCE_PREFIX "")
   set(sync_DEVEL_PREFIX "")
-  set(sync_INSTALL_PREFIX /home/cuong/cnn2025_ws/install)
+  set(sync_INSTALL_PREFIX /home/xuanbo/cnn2025_ws/install)
   set(sync_PREFIX ${sync_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cuong/cnn2025_ws/install/lib;/home/cuong/cnn2025_ws/devel/lib;/home/cuong/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/xuanbo/cnn2025_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,8 +1,8 @@
-# Install script for directory: /home/cuong/cnn2025_ws/src/ai_perception
+# Install script for directory: /home/xuanbo/cnn2025_ws/src/ai_perception
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cuong/cnn2025_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/xuanbo/cnn2025_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cuong/cnn2025_ws/build/ai_perception/catkin_generated/installspace/ai_perception.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/build/ai_perception/catkin_generated/installspace/ai_perception.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ai_perception/cmake" TYPE FILE FILES
-    "/home/cuong/cnn2025_ws/build/ai_perception/catkin_generated/installspace/ai_perceptionConfig.cmake"
-    "/home/cuong/cnn2025_ws/build/ai_perception/catkin_generated/installspace/ai_perceptionConfig-version.cmake"
+    "/home/xuanbo/cnn2025_ws/build/ai_perception/catkin_generated/installspace/ai_perceptionConfig.cmake"
+    "/home/xuanbo/cnn2025_ws/build/ai_perception/catkin_generated/installspace/ai_perceptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ai_perception" TYPE FILE FILES "/home/cuong/cnn2025_ws/src/ai_perception/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ai_perception" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/src/ai_perception/package.xml")
 endif()
 

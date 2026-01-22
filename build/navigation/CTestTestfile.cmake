@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/cuong/cnn2025_ws/src/navigation
-# Build directory: /home/cuong/cnn2025_ws/build/navigation
+# Source directory: /home/xuanbo/cnn2025_ws/src/navigation
+# Build directory: /home/xuanbo/cnn2025_ws/build/navigation
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

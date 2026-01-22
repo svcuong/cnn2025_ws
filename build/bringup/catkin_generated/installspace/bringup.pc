@@ -1,4 +1,4 @@
-prefix=/home/cuong/cnn2025_ws/install
+prefix=/home/xuanbo/cnn2025_ws/install
 
 Name: bringup
 Description: Description of bringup

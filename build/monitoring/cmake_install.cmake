@@ -1,8 +1,8 @@
-# Install script for directory: /home/cuong/cnn2025_ws/src/monitoring
+# Install script for directory: /home/xuanbo/cnn2025_ws/src/monitoring
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cuong/cnn2025_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/xuanbo/cnn2025_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cuong/cnn2025_ws/build/monitoring/catkin_generated/installspace/monitoring.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/build/monitoring/catkin_generated/installspace/monitoring.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/monitoring/cmake" TYPE FILE FILES
-    "/home/cuong/cnn2025_ws/build/monitoring/catkin_generated/installspace/monitoringConfig.cmake"
-    "/home/cuong/cnn2025_ws/build/monitoring/catkin_generated/installspace/monitoringConfig-version.cmake"
+    "/home/xuanbo/cnn2025_ws/build/monitoring/catkin_generated/installspace/monitoringConfig.cmake"
+    "/home/xuanbo/cnn2025_ws/build/monitoring/catkin_generated/installspace/monitoringConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/monitoring" TYPE FILE FILES "/home/cuong/cnn2025_ws/src/monitoring/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/monitoring" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/src/monitoring/package.xml")
 endif()
 
