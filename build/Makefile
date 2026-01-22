@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles /home/xuanbo/cnn2025_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tung/cnn2025_ws/build/CMakeFiles /home/tung/cnn2025_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tung/cnn2025_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -909,6 +909,19 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named rslidar_sdk_node
+
+# Build rule for target.
+rslidar_sdk_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk_node
+.PHONY : rslidar_sdk_node
+
+# fast build rule for target.
+rslidar_sdk_node/fast:
+	$(MAKE) -f rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build.make rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build
+.PHONY : rslidar_sdk_node/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -1654,6 +1667,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... rslidar_sdk_node"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"

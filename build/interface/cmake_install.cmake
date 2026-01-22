@@ -1,8 +1,8 @@
-# Install script for directory: /home/xuanbo/cnn2025_ws/src/interface
+# Install script for directory: /home/tung/cnn2025_ws/src/interface
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xuanbo/cnn2025_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tung/cnn2025_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/build/interface/catkin_generated/installspace/interface.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tung/cnn2025_ws/build/interface/catkin_generated/installspace/interface.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface/cmake" TYPE FILE FILES
-    "/home/xuanbo/cnn2025_ws/build/interface/catkin_generated/installspace/interfaceConfig.cmake"
-    "/home/xuanbo/cnn2025_ws/build/interface/catkin_generated/installspace/interfaceConfig-version.cmake"
+    "/home/tung/cnn2025_ws/build/interface/catkin_generated/installspace/interfaceConfig.cmake"
+    "/home/tung/cnn2025_ws/build/interface/catkin_generated/installspace/interfaceConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/src/interface/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interface" TYPE FILE FILES "/home/tung/cnn2025_ws/src/interface/package.xml")
 endif()
 

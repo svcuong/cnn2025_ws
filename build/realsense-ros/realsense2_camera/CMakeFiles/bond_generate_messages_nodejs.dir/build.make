@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for bond_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/bui
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build
 
 realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean:
-	cd /home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/bond_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/bond_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/depend:
-	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xuanbo/cnn2025_ws/src /home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera /home/xuanbo/cnn2025_ws/build /home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_camera /home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/realsense-ros/realsense2_camera /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/realsense-ros/realsense2_camera /home/tung/cnn2025_ws/build/realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/depend
 

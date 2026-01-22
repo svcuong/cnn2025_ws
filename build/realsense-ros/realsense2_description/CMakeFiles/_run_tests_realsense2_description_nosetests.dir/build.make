@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for _run_tests_realsense2_description_nosetests.
 
@@ -63,10 +63,10 @@ realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_descriptio
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/build
 
 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/clean:
-	cd /home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_realsense2_description_nosetests.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_realsense2_description_nosetests.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/clean
 
 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/depend:
-	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xuanbo/cnn2025_ws/src /home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description /home/xuanbo/cnn2025_ws/build /home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description /home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/realsense-ros/realsense2_description /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/realsense-ros/realsense2_description /home/tung/cnn2025_ws/build/realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/depend
 

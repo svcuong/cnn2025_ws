@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/xuanbo/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Extrinsics.lisp"
-  "/home/xuanbo/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/msg/IMUInfo.lisp"
-  "/home/xuanbo/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Metadata.lisp"
-  "/home/xuanbo/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/srv/DeviceInfo.lisp"
+  "/home/tung/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Extrinsics.lisp"
+  "/home/tung/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/msg/IMUInfo.lisp"
+  "/home/tung/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Metadata.lisp"
+  "/home/tung/cnn2025_ws/devel/share/common-lisp/ros/realsense2_camera/srv/DeviceInfo.lisp"
   "CMakeFiles/realsense2_camera_generate_messages_lisp"
 )
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description
+# Install script for directory: /home/tung/cnn2025_ws/src/realsense-ros/realsense2_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xuanbo/cnn2025_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tung/cnn2025_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tung/cnn2025_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description/cmake" TYPE FILE FILES
-    "/home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
-    "/home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
+    "/home/tung/cnn2025_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
+    "/home/tung/cnn2025_ws/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/tung/cnn2025_ws/src/realsense-ros/realsense2_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE DIRECTORY FILES
-    "/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description/launch"
-    "/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description/meshes"
-    "/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description/rviz"
-    "/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_description/urdf"
+    "/home/tung/cnn2025_ws/src/realsense-ros/realsense2_description/launch"
+    "/home/tung/cnn2025_ws/src/realsense-ros/realsense2_description/meshes"
+    "/home/tung/cnn2025_ws/src/realsense-ros/realsense2_description/rviz"
+    "/home/tung/cnn2025_ws/src/realsense-ros/realsense2_description/urdf"
     )
 endif()
 

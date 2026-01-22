@@ -1,4 +1,4 @@
-prefix=/home/xuanbo/cnn2025_ws/install
+prefix=/home/tung/cnn2025_ws/install
 
 Name: interface
 Description: Description of interface

@@ -1,4 +1,4 @@
-prefix=/home/xuanbo/cnn2025_ws/devel
+prefix=/home/tung/cnn2025_ws/devel
 
 Name: localization
 Description: Description of localization
