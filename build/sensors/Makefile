@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/cnn2025_ws/build/CMakeFiles /home/cuong/cnn2025_ws/build/sensors/CMakeFiles/progress.marks
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/cnn2025_ws/build/CMakeFiles 0
+	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles /home/xuanbo/cnn2025_ws/build/sensors/CMakeFiles/progress.marks
+	cd /home/xuanbo/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/clean
+	cd /home/xuanbo/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,93 +154,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/preinstall
+	cd /home/xuanbo/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/preinstall
+	cd /home/xuanbo/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-sensors/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : sensors/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: sensors/CMakeFiles/tf_generate_messages_py.dir/rule
-
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f sensors/CMakeFiles/tf_generate_messages_py.dir/build.make sensors/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
-sensors/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-.PHONY : sensors/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_nodejs: sensors/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f sensors/CMakeFiles/tf_generate_messages_nodejs.dir/build.make sensors/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sensors/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : sensors/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: sensors/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f sensors/CMakeFiles/tf_generate_messages_lisp.dir/build.make sensors/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-sensors/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/CMakeFiles/tf_generate_messages_eus.dir/rule
-.PHONY : sensors/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_eus: sensors/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-.PHONY : tf_generate_messages_eus
-
-# fast build rule for target.
-tf_generate_messages_eus/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f sensors/CMakeFiles/tf_generate_messages_eus.dir/build.make sensors/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
-
-# Convenience name for target.
-sensors/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sensors/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : sensors/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: sensors/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f sensors/CMakeFiles/tf_generate_messages_cpp.dir/build.make sensors/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
 
 # Help Target
 help:
@@ -255,11 +180,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... tf_generate_messages_py"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_eus"
-	@echo "... tf_generate_messages_cpp"
 .PHONY : help
 
 
@@ -271,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

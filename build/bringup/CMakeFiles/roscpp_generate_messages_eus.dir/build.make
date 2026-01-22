@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
 
 # Utility rule file for roscpp_generate_messages_eus.
 
@@ -63,10 +63,10 @@ bringup/CMakeFiles/roscpp_generate_messages_eus.dir/build: roscpp_generate_messa
 .PHONY : bringup/CMakeFiles/roscpp_generate_messages_eus.dir/build
 
 bringup/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	cd /home/cuong/cnn2025_ws/build/bringup && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/xuanbo/cnn2025_ws/build/bringup && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : bringup/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 bringup/CMakeFiles/roscpp_generate_messages_eus.dir/depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuong/cnn2025_ws/src /home/cuong/cnn2025_ws/src/bringup /home/cuong/cnn2025_ws/build /home/cuong/cnn2025_ws/build/bringup /home/cuong/cnn2025_ws/build/bringup/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xuanbo/cnn2025_ws/src /home/xuanbo/cnn2025_ws/src/bringup /home/xuanbo/cnn2025_ws/build /home/xuanbo/cnn2025_ws/build/bringup /home/xuanbo/cnn2025_ws/build/bringup/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bringup/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 

@@ -1,4 +1,4 @@
-prefix=/home/cuong/cnn2025_ws/install
+prefix=/home/xuanbo/cnn2025_ws/install
 
 Name: ai_perception
 Description: Description of ai_perception
