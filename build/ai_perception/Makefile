@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/cnn2025_ws/build/CMakeFiles /home/cuong/cnn2025_ws/build/ai_perception/CMakeFiles/progress.marks
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuong/cnn2025_ws/build/CMakeFiles 0
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tung/cnn2025_ws/build/CMakeFiles /home/tung/cnn2025_ws/build/ai_perception/CMakeFiles/progress.marks
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tung/cnn2025_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/clean
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/preinstall
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/preinstall
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ sensor_msgs_generate_messages_py: ai_perception/CMakeFiles/sensor_msgs_generate_
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ sensor_msgs_generate_messages_nodejs: ai_perception/CMakeFiles/sensor_msgs_gener
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ sensor_msgs_generate_messages_lisp: ai_perception/CMakeFiles/sensor_msgs_generat
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ sensor_msgs_generate_messages_eus: ai_perception/CMakeFiles/sensor_msgs_generate
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -239,7 +239,7 @@ sensor_msgs_generate_messages_cpp: ai_perception/CMakeFiles/sensor_msgs_generate
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/cuong/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/tung/cnn2025_ws/build && $(MAKE) -f ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Help Target
@@ -271,6 +271,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for tf2_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build: tf2_msgs_ge
 .PHONY : localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 
 localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/cuong/cnn2025_ws/build/localization && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/localization && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 
 localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuong/cnn2025_ws/src /home/cuong/cnn2025_ws/src/localization /home/cuong/cnn2025_ws/build /home/cuong/cnn2025_ws/build/localization /home/cuong/cnn2025_ws/build/localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/localization /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/localization /home/tung/cnn2025_ws/build/localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend
 

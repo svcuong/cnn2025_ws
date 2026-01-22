@@ -67,14 +67,14 @@ set(bringup_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(bringup_SOURCE_PREFIX /home/cuong/cnn2025_ws/src/bringup)
-  set(bringup_DEVEL_PREFIX /home/cuong/cnn2025_ws/devel)
+  set(bringup_SOURCE_PREFIX /home/tung/cnn2025_ws/src/bringup)
+  set(bringup_DEVEL_PREFIX /home/tung/cnn2025_ws/devel)
   set(bringup_INSTALL_PREFIX "")
   set(bringup_PREFIX ${bringup_DEVEL_PREFIX})
 else()
   set(bringup_SOURCE_PREFIX "")
   set(bringup_DEVEL_PREFIX "")
-  set(bringup_INSTALL_PREFIX /home/cuong/cnn2025_ws/install)
+  set(bringup_INSTALL_PREFIX /home/tung/cnn2025_ws/install)
   set(bringup_PREFIX ${bringup_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cuong/cnn2025_ws/install/lib;/home/cuong/cnn2025_ws/devel/lib;/home/cuong/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/tung/cnn2025_ws/install/lib;/home/tung/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

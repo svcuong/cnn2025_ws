@@ -1,0 +1,30 @@
+<launch>
+
+  <!-- RoboSense Helios Driver -->
+  <node pkg="rslidar_sdk"
+        type="rslidar_sdk_node"
+        name="rslidar_driver"
+        output="screen">
+    <param name="config_path" value="$(find bringup)/config/sensors.yaml"/>
+  </node>
+  <!-- LiDAR Adapter -->
+  <node pkg="sensors"
+        type="lidar_node.py"
+        name="lidar_node"
+        output="screen">
+
+    <param name="input_topic" value="/rslidar_points"/>
+    <param name="output_topic" value="/sensors/lidar/points"/>
+    <param name="frame_id" value="lidar_link"/>
+
+  </node>
+
+    <!-- RViz -->
+  <node pkg="rviz"
+        type="rviz"
+        name="rviz"
+        args="-d $(find bringup)/rviz/lidar.rviz"
+        output="screen"/>
+
+
+</launch>

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for actionlib_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ localization/CMakeFiles/actionlib_generate_messages_lisp.dir/build: actionlib_ge
 .PHONY : localization/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 
 localization/CMakeFiles/actionlib_generate_messages_lisp.dir/clean:
-	cd /home/cuong/cnn2025_ws/build/localization && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/localization && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : localization/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
 
 localization/CMakeFiles/actionlib_generate_messages_lisp.dir/depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuong/cnn2025_ws/src /home/cuong/cnn2025_ws/src/localization /home/cuong/cnn2025_ws/build /home/cuong/cnn2025_ws/build/localization /home/cuong/cnn2025_ws/build/localization/CMakeFiles/actionlib_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/localization /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/localization /home/tung/cnn2025_ws/build/localization/CMakeFiles/actionlib_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : localization/CMakeFiles/actionlib_generate_messages_lisp.dir/depend
 

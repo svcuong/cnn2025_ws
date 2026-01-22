@@ -1,4 +1,4 @@
-prefix=/home/cuong/cnn2025_ws/install
+prefix=/home/tung/cnn2025_ws/install
 
 Name: monitoring
 Description: Description of monitoring

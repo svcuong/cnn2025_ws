@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for actionlib_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build: actionlib_
 .PHONY : navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 
 navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
-	cd /home/cuong/cnn2025_ws/build/navigation && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/navigation && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
 
 navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuong/cnn2025_ws/src /home/cuong/cnn2025_ws/src/navigation /home/cuong/cnn2025_ws/build /home/cuong/cnn2025_ws/build/navigation /home/cuong/cnn2025_ws/build/navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/navigation /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/navigation /home/tung/cnn2025_ws/build/navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : navigation/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
 

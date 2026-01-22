@@ -1,8 +1,8 @@
-# Install script for directory: /home/cuong/cnn2025_ws/src/bringup
+# Install script for directory: /home/tung/cnn2025_ws/src/bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cuong/cnn2025_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tung/cnn2025_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cuong/cnn2025_ws/build/bringup/catkin_generated/installspace/bringup.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tung/cnn2025_ws/build/bringup/catkin_generated/installspace/bringup.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bringup/cmake" TYPE FILE FILES
-    "/home/cuong/cnn2025_ws/build/bringup/catkin_generated/installspace/bringupConfig.cmake"
-    "/home/cuong/cnn2025_ws/build/bringup/catkin_generated/installspace/bringupConfig-version.cmake"
+    "/home/tung/cnn2025_ws/build/bringup/catkin_generated/installspace/bringupConfig.cmake"
+    "/home/tung/cnn2025_ws/build/bringup/catkin_generated/installspace/bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bringup" TYPE FILE FILES "/home/cuong/cnn2025_ws/src/bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bringup" TYPE FILE FILES "/home/tung/cnn2025_ws/src/bringup/package.xml")
 endif()
 

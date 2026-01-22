@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build: sensor_
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/cuong/cnn2025_ws/build/ai_perception && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/ai_perception && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 
 ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuong/cnn2025_ws/src /home/cuong/cnn2025_ws/src/ai_perception /home/cuong/cnn2025_ws/build /home/cuong/cnn2025_ws/build/ai_perception /home/cuong/cnn2025_ws/build/ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/ai_perception /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/ai_perception /home/tung/cnn2025_ws/build/ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuong/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuong/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for tf_generate_messages_py.
 
@@ -63,10 +63,10 @@ sensors/CMakeFiles/tf_generate_messages_py.dir/build: tf_generate_messages_py
 .PHONY : sensors/CMakeFiles/tf_generate_messages_py.dir/build
 
 sensors/CMakeFiles/tf_generate_messages_py.dir/clean:
-	cd /home/cuong/cnn2025_ws/build/sensors && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/sensors && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : sensors/CMakeFiles/tf_generate_messages_py.dir/clean
 
 sensors/CMakeFiles/tf_generate_messages_py.dir/depend:
-	cd /home/cuong/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuong/cnn2025_ws/src /home/cuong/cnn2025_ws/src/sensors /home/cuong/cnn2025_ws/build /home/cuong/cnn2025_ws/build/sensors /home/cuong/cnn2025_ws/build/sensors/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/sensors /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/sensors /home/tung/cnn2025_ws/build/sensors/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensors/CMakeFiles/tf_generate_messages_py.dir/depend
 

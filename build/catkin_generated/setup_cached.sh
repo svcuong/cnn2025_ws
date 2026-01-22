@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/cuong/cnn2025_ws/build'
+export CMAKE_PREFIX_PATH="/home/tung/cnn2025_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/tung/cnn2025_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/tung/cnn2025_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/tung/cnn2025_ws/src:$ROS_PACKAGE_PATH"
