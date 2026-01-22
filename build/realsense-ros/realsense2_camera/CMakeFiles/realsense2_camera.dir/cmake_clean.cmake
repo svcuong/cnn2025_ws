@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/xuanbo/cnn2025_ws/devel/lib/librealsense2_camera.pdb"
-  "/home/xuanbo/cnn2025_ws/devel/lib/librealsense2_camera.so"
+  "/home/tung/cnn2025_ws/devel/lib/librealsense2_camera.pdb"
+  "/home/tung/cnn2025_ws/devel/lib/librealsense2_camera.so"
   "CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/xuanbo/cnn2025_ws/devel/include/realsense2_camera/DeviceInfo.h"
-  "/home/xuanbo/cnn2025_ws/devel/include/realsense2_camera/Extrinsics.h"
-  "/home/xuanbo/cnn2025_ws/devel/include/realsense2_camera/IMUInfo.h"
-  "/home/xuanbo/cnn2025_ws/devel/include/realsense2_camera/Metadata.h"
+  "/home/tung/cnn2025_ws/devel/include/realsense2_camera/DeviceInfo.h"
+  "/home/tung/cnn2025_ws/devel/include/realsense2_camera/Extrinsics.h"
+  "/home/tung/cnn2025_ws/devel/include/realsense2_camera/IMUInfo.h"
+  "/home/tung/cnn2025_ws/devel/include/realsense2_camera/Metadata.h"
   "CMakeFiles/realsense2_camera_generate_messages_cpp"
 )
 

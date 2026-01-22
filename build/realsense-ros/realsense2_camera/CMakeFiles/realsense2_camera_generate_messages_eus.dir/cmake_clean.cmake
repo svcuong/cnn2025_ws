@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/xuanbo/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/manifest.l"
-  "/home/xuanbo/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/msg/Extrinsics.l"
-  "/home/xuanbo/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/msg/IMUInfo.l"
-  "/home/xuanbo/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/msg/Metadata.l"
-  "/home/xuanbo/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/srv/DeviceInfo.l"
+  "/home/tung/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/manifest.l"
+  "/home/tung/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/msg/Extrinsics.l"
+  "/home/tung/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/msg/IMUInfo.l"
+  "/home/tung/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/msg/Metadata.l"
+  "/home/tung/cnn2025_ws/devel/share/roseus/ros/realsense2_camera/srv/DeviceInfo.l"
   "CMakeFiles/realsense2_camera_generate_messages_eus"
 )
 

@@ -67,14 +67,14 @@ set(localization_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(localization_SOURCE_PREFIX /home/xuanbo/cnn2025_ws/src/localization)
-  set(localization_DEVEL_PREFIX /home/xuanbo/cnn2025_ws/devel)
+  set(localization_SOURCE_PREFIX /home/tung/cnn2025_ws/src/localization)
+  set(localization_DEVEL_PREFIX /home/tung/cnn2025_ws/devel)
   set(localization_INSTALL_PREFIX "")
   set(localization_PREFIX ${localization_DEVEL_PREFIX})
 else()
   set(localization_SOURCE_PREFIX "")
   set(localization_DEVEL_PREFIX "")
-  set(localization_INSTALL_PREFIX /home/xuanbo/cnn2025_ws/install)
+  set(localization_INSTALL_PREFIX /home/tung/cnn2025_ws/install)
   set(localization_PREFIX ${localization_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/xuanbo/cnn2025_ws/install/lib;/home/xuanbo/cnn2025_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/tung/cnn2025_ws/install/lib;/home/tung/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

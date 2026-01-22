@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for nav_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build: nav_msgs_generat
 .PHONY : navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 
 navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
-	cd /home/xuanbo/cnn2025_ws/build/navigation && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/navigation && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend:
-	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xuanbo/cnn2025_ws/src /home/xuanbo/cnn2025_ws/src/navigation /home/xuanbo/cnn2025_ws/build /home/xuanbo/cnn2025_ws/build/navigation /home/xuanbo/cnn2025_ws/build/navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/navigation /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/navigation /home/tung/cnn2025_ws/build/navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : navigation/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
 

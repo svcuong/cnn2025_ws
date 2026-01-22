@@ -67,14 +67,14 @@ set(realsense2_camera_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(realsense2_camera_SOURCE_PREFIX /home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera)
-  set(realsense2_camera_DEVEL_PREFIX /home/xuanbo/cnn2025_ws/devel)
+  set(realsense2_camera_SOURCE_PREFIX /home/tung/cnn2025_ws/src/realsense-ros/realsense2_camera)
+  set(realsense2_camera_DEVEL_PREFIX /home/tung/cnn2025_ws/devel)
   set(realsense2_camera_INSTALL_PREFIX "")
   set(realsense2_camera_PREFIX ${realsense2_camera_DEVEL_PREFIX})
 else()
   set(realsense2_camera_SOURCE_PREFIX "")
   set(realsense2_camera_DEVEL_PREFIX "")
-  set(realsense2_camera_INSTALL_PREFIX /home/xuanbo/cnn2025_ws/install)
+  set(realsense2_camera_INSTALL_PREFIX /home/tung/cnn2025_ws/install)
   set(realsense2_camera_PREFIX ${realsense2_camera_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/xuanbo/cnn2025_ws/install/lib;/home/xuanbo/cnn2025_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/tung/cnn2025_ws/install/lib;/home/tung/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

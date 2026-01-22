@@ -1,8 +1,8 @@
-# Install script for directory: /home/xuanbo/cnn2025_ws/src/sensors
+# Install script for directory: /home/tung/cnn2025_ws/src/sensors
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xuanbo/cnn2025_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tung/cnn2025_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/build/sensors/catkin_generated/installspace/sensors.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tung/cnn2025_ws/build/sensors/catkin_generated/installspace/sensors.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensors/cmake" TYPE FILE FILES
-    "/home/xuanbo/cnn2025_ws/build/sensors/catkin_generated/installspace/sensorsConfig.cmake"
-    "/home/xuanbo/cnn2025_ws/build/sensors/catkin_generated/installspace/sensorsConfig-version.cmake"
+    "/home/tung/cnn2025_ws/build/sensors/catkin_generated/installspace/sensorsConfig.cmake"
+    "/home/tung/cnn2025_ws/build/sensors/catkin_generated/installspace/sensorsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensors" TYPE FILE FILES "/home/xuanbo/cnn2025_ws/src/sensors/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensors" TYPE FILE FILES "/home/tung/cnn2025_ws/src/sensors/package.xml")
 endif()
 

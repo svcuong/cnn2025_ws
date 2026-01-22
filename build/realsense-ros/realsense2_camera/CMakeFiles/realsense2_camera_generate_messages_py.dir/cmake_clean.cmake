@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/home/xuanbo/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Extrinsics.py"
-  "/home/xuanbo/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_IMUInfo.py"
-  "/home/xuanbo/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Metadata.py"
-  "/home/xuanbo/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/__init__.py"
-  "/home/xuanbo/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/_DeviceInfo.py"
-  "/home/xuanbo/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/__init__.py"
+  "/home/tung/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Extrinsics.py"
+  "/home/tung/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_IMUInfo.py"
+  "/home/tung/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/_Metadata.py"
+  "/home/tung/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/msg/__init__.py"
+  "/home/tung/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/_DeviceInfo.py"
+  "/home/tung/cnn2025_ws/devel/lib/python3/dist-packages/realsense2_camera/srv/__init__.py"
   "CMakeFiles/realsense2_camera_generate_messages_py"
 )
 

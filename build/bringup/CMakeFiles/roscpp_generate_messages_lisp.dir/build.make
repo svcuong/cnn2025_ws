@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xuanbo/cnn2025_ws/src
+CMAKE_SOURCE_DIR = /home/tung/cnn2025_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
+CMAKE_BINARY_DIR = /home/tung/cnn2025_ws/build
 
 # Utility rule file for roscpp_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/build: roscpp_generate_mess
 .PHONY : bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 
 bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	cd /home/xuanbo/cnn2025_ws/build/bringup && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/tung/cnn2025_ws/build/bringup && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/depend:
-	cd /home/xuanbo/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xuanbo/cnn2025_ws/src /home/xuanbo/cnn2025_ws/src/bringup /home/xuanbo/cnn2025_ws/build /home/xuanbo/cnn2025_ws/build/bringup /home/xuanbo/cnn2025_ws/build/bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tung/cnn2025_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tung/cnn2025_ws/src /home/tung/cnn2025_ws/src/bringup /home/tung/cnn2025_ws/build /home/tung/cnn2025_ws/build/bringup /home/tung/cnn2025_ws/build/bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bringup/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 

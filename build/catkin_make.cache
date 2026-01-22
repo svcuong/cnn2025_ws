@@ -1,2 +1,2 @@
-ai_perception:bringup:interface:localization:monitoring:navigation:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:sensors:sync
--DCATKIN_DEVEL_PREFIX=/home/xuanbo/cnn2025_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xuanbo/cnn2025_ws/install -G Unix Makefiles
+ai_perception:bringup:interface:localization:monitoring:navigation:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:rslidar_sdk:sensors:sync
+-DCATKIN_DEVEL_PREFIX=/home/tung/cnn2025_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tung/cnn2025_ws/install -G Unix Makefiles
