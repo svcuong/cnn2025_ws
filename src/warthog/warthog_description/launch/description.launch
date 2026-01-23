@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- ========================= -->
+  <!-- Arguments -->
+  <!-- ========================= -->
+  <arg name="config" default="base" />
+  <arg name="use_joint_state_publisher" default="true" />
+
+  <!-- ========================= -->
+  <!-- Robot Description -->
+  <!-- ========================= -->
+  <param name="robot_description"
+         command="$(find warthog_description)/scripts/env_run
+                  $(find warthog_description)/urdf/configs/$(arg config)
+                  $(find xacro)/xacro
+                  $(find warthog_description)/urdf/warthog.urdf.xacro
+                  --inorder" />
+
+  <!-- ========================= -->
+  <!-- Joint State Publisher (FAKE joints for RViz) -->
+  <!-- ========================= -->
+  <node if="$(arg use_joint_state_publisher)"
+        name="joint_state_publisher"
+        pkg="joint_state_publisher"
+        type="joint_state_publisher" />
+
+  <!-- ========================= -->
+  <!-- Robot State Publisher -->
+  <!-- ========================= -->
+  <node name="robot_state_publisher"
+        pkg="robot_state_publisher"
+        type="robot_state_publisher" />
+</launch>
