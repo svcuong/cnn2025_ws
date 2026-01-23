@@ -1,8 +1,0 @@
-prefix=/home/xuanbo/cnn2025_ws/install
-
-Name: interface
-Description: Description of interface
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
