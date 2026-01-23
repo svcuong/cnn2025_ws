@@ -1,0 +1,56 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+  - Class: rviz/Time
+    Name: Time
+
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: camera_link
+    Frame Rate: 30
+  Displays:
+
+    - Name: Grid
+      Class: rviz/Grid
+      Enabled: true
+      Cell Size: 1
+      Plane: XY
+      Color: 160; 160; 160
+      Alpha: 0.5
+
+    - Name: Camera
+      Class: rviz/Camera
+      Enabled: true
+      Image Topic: /camera/color/image_raw
+      Transport Hint: raw
+      Queue Size: 2
+      Alpha: 1
+
+    - Name: DepthCloud
+      Class: rviz/PointCloud2
+      Enabled: true
+      Topic: /camera/depth/image_raw
+      Queue Size: 1
+      Style: Points
+      Size (Pixels): 3
+      Color Transformer: RGB8
+      Alpha: 1
+
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 10
+      Focal Point: 0; 0; 0
+      Pitch: 0.28
+      Yaw: 0.2
+      Near Clip Distance: 0.01
+      Target Frame: <Fixed Frame>
+
+Time:
+  SyncMode: 0
+  SyncSource: ""
