@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/xuanbo/cnn2025_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: realsense-ros/realsense2_description/all
 all: bringup/all
 all: interface/all
 all: monitoring/all
@@ -69,7 +68,6 @@ all: sensors/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: realsense-ros/realsense2_description/preinstall
 preinstall: bringup/preinstall
 preinstall: interface/preinstall
 preinstall: monitoring/preinstall
@@ -89,7 +87,6 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: realsense-ros/realsense2_description/clean
 clean: bringup/clean
 clean: interface/clean
 clean: monitoring/clean
@@ -335,6 +332,7 @@ realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFile
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gencpp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/clean
+realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_py.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_eus.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_cpp.dir/clean
@@ -351,14 +349,15 @@ realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFile
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
-realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
-realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
-realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean
-realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean
+realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_eus.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_py.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages.dir/clean
+realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
+realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
+realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean
+realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/clean
@@ -368,34 +367,8 @@ realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFile
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
 realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
-realsense-ros/realsense2_camera/clean: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
 
 .PHONY : realsense-ros/realsense2_camera/clean
-
-#=============================================================================
-# Directory level rules for directory realsense-ros/realsense2_description
-
-# Recursive "all" directory target.
-realsense-ros/realsense2_description/all:
-
-.PHONY : realsense-ros/realsense2_description/all
-
-# Recursive "preinstall" directory target.
-realsense-ros/realsense2_description/preinstall:
-
-.PHONY : realsense-ros/realsense2_description/preinstall
-
-# Recursive "clean" directory target.
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/clean
-realsense-ros/realsense2_description/clean: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean
-
-.PHONY : realsense-ros/realsense2_description/clean
 
 #=============================================================================
 # Directory level rules for directory sensors
@@ -464,7 +437,7 @@ CMakeFiles/doxygen.dir/clean:
 # Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests.dir/all: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/all
+CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target run_tests"
@@ -676,223 +649,6 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/all: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/all
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target run_tests_realsense2_description"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/rule
-
-# Convenience name for target.
-run_tests_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/rule
-
-.PHONY : run_tests_realsense2_description
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/all: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/all
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _run_tests_realsense2_description"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/rule
-
-# Convenience name for target.
-_run_tests_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/rule
-
-.PHONY : _run_tests_realsense2_description
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/all: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/all
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target run_tests_realsense2_description_nosetests"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/rule
-
-# Convenience name for target.
-run_tests_realsense2_description_nosetests: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/rule
-
-.PHONY : run_tests_realsense2_description_nosetests
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/all: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/all
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _run_tests_realsense2_description_nosetests"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/rule
-
-# Convenience name for target.
-_run_tests_realsense2_description_nosetests: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/rule
-
-.PHONY : _run_tests_realsense2_description_nosetests
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/all: CMakeFiles/tests.dir/all
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/all: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/all
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _run_tests_realsense2_description_nosetests_tests"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/rule
-
-# Convenience name for target.
-_run_tests_realsense2_description_nosetests_tests: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/rule
-
-.PHONY : _run_tests_realsense2_description_nosetests_tests
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target run_tests_realsense2_description_nosetests_tests"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/rule
-
-# Convenience name for target.
-run_tests_realsense2_description_nosetests_tests: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/rule
-
-.PHONY : run_tests_realsense2_description_nosetests_tests
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/build.make realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target clean_test_results_realsense2_description"
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/rule
-
-# Convenience name for target.
-clean_test_results_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/rule
-
-.PHONY : clean_test_results_realsense2_description
-
-# clean rule for target.
-realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build.make realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean
-.PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean
 
 #=============================================================================
 # Target rules for target bringup/CMakeFiles/std_msgs_generate_messages_py.dir
@@ -2278,9 +2034,9 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/clean:
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: ai_perception/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Metadata.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_IMUInfo.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num=22,23,24,25 "Built target realsense2_camera_generate_messages_lisp"
@@ -2364,9 +2120,9 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_geneus.dir/clean:
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: ai_perception/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Metadata.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_IMUInfo.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num=17,18,19,20,21 "Built target realsense2_camera_generate_messages_eus"
@@ -2423,9 +2179,9 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gencpp.dir/clean:
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: ai_perception/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Metadata.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_IMUInfo.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num=13,14,15,16 "Built target realsense2_camera_generate_messages_cpp"
@@ -2474,6 +2230,33 @@ _realsense2_camera_generate_messages_check_deps_DeviceInfo: realsense-ros/realse
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/clean:
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/clean
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/clean
+
+#=============================================================================
+# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir
+
+# All Build rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/depend
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _realsense2_camera_generate_messages_check_deps_Extrinsics"
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
+
+# Build rule for subdir invocation for target.
+realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/rule
+
+# Convenience name for target.
+_realsense2_camera_generate_messages_check_deps_Extrinsics: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/rule
+
+.PHONY : _realsense2_camera_generate_messages_check_deps_Extrinsics
+
+# clean rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
 
 #=============================================================================
 # Target rules for target realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_py.dir
@@ -2590,9 +2373,9 @@ realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_lisp.dir/clean
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_py.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: ai_perception/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Metadata.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_IMUInfo.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num=30,31,32,33,34,35 "Built target realsense2_camera_generate_messages_py"
@@ -2730,9 +2513,9 @@ realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_generate_messages
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: ai_perception/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Metadata.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_IMUInfo.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num=26,27,28,29 "Built target realsense2_camera_generate_messages_nodejs"
@@ -2918,112 +2701,31 @@ realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/cl
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir
+# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target nodelet_generate_messages_nodejs"
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule: cmake_check_build_system
+realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-nodelet_generate_messages_nodejs: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+_catkin_empty_exported_target: realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
-.PHONY : nodelet_generate_messages_nodejs
-
-# clean rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target bond_generate_messages_nodejs"
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_nodejs: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-.PHONY : bond_generate_messages_nodejs
+.PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target bond_generate_messages_py"
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/rule
-
-.PHONY : bond_generate_messages_py
-
-# clean rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_cpp"
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-.PHONY : tf_generate_messages_cpp
-
-# clean rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean
+realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_cpp.dir
@@ -3138,6 +2840,114 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages.d
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages.dir/clean
 
 #=============================================================================
+# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir
+
+# All Build rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/depend
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target nodelet_generate_messages_nodejs"
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_nodejs: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+.PHONY : nodelet_generate_messages_nodejs
+
+# clean rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir
+
+# All Build rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/depend
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target bond_generate_messages_nodejs"
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_nodejs: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+.PHONY : bond_generate_messages_nodejs
+
+# clean rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir
+
+# All Build rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/depend
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target bond_generate_messages_py"
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# clean rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir
+
+# All Build rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/depend
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_cpp"
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# clean rule for target.
+realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean:
+	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean
+.PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/clean
+
+#=============================================================================
 # Target rules for target realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -3249,7 +3059,6 @@ realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_
 # Target rules for target realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir
 
 # All Build rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_py.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: bringup/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: bringup/CMakeFiles/roscpp_generate_messages_cpp.dir/all
@@ -3313,13 +3122,14 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_eus.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_catkin_empty_exported_target.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_eus.dir/all
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_py.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_nodejs.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/bond_generate_messages_py.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_cpp.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_eus.dir/all
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/tf_generate_messages_py.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/all
@@ -3456,33 +3266,6 @@ dynamic_reconfigure_gencfg: realsense-ros/realsense2_camera/CMakeFiles/dynamic_r
 realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
-
-#=============================================================================
-# Target rules for target realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir
-
-# All Build rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/depend
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xuanbo/cnn2025_ws/build/CMakeFiles --progress-num= "Built target _realsense2_camera_generate_messages_check_deps_Extrinsics"
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
-
-# Build rule for subdir invocation for target.
-realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xuanbo/cnn2025_ws/build/CMakeFiles 0
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/rule
-
-# Convenience name for target.
-_realsense2_camera_generate_messages_check_deps_Extrinsics: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/rule
-
-.PHONY : _realsense2_camera_generate_messages_check_deps_Extrinsics
-
-# clean rule for target.
-realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean:
-	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
-.PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

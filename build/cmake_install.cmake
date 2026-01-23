@@ -146,7 +146,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/xuanbo/cnn2025_ws/build/gtest/cmake_install.cmake")
-  include("/home/xuanbo/cnn2025_ws/build/realsense-ros/realsense2_description/cmake_install.cmake")
   include("/home/xuanbo/cnn2025_ws/build/bringup/cmake_install.cmake")
   include("/home/xuanbo/cnn2025_ws/build/interface/cmake_install.cmake")
   include("/home/xuanbo/cnn2025_ws/build/monitoring/cmake_install.cmake")

@@ -180,30 +180,6 @@ thread
 std_srvs/Empty.h
 -
 
-/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/include/realsense2_camera/t265_realsense_node.h
-realsense2_camera/base_realsense_node.h
--
-
-/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp
-realsense2_camera/base_realsense_node.h
-/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/realsense2_camera/base_realsense_node.h
-assert.h
-/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/assert.h
-boost/algorithm/string.hpp
--
-algorithm
--
-cctype
--
-mutex
--
-dynamic_reconfigure/IntParameter.h
--
-dynamic_reconfigure/Reconfigure.h
--
-dynamic_reconfigure/Config.h
--
-
 /home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
 realsense2_camera/realsense_node_factory.h
 /home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/realsense2_camera/realsense_node_factory.h
@@ -225,10 +201,6 @@ thread
 -
 regex
 -
-
-/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
-realsense2_camera/t265_realsense_node.h
-/home/xuanbo/cnn2025_ws/src/realsense-ros/realsense2_camera/src/realsense2_camera/t265_realsense_node.h
 
 /opt/ros/noetic/include/class_loader/class_loader.hpp
 boost/bind/bind.hpp
