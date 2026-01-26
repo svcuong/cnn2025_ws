@@ -1,0 +1,93 @@
+# =========================
+# RealSense D455 config (FIXED & CLEAN)
+# =========================
+
+# -------- Device --------
+serial_no: ""            # Serial camera (để trống = tự động chọn)
+usb_port_id: ""          # USB port ID (hiếm dùng)
+device_type: "d455"      # Bắt buộc: đúng loại camera
+json_file_path: ""       # Preset JSON (không dùng thì để trống)
+
+# -------- Enable streams --------
+enable_color: true       # Bật RGB
+enable_depth: true       # Bật depth
+
+enable_confidence: false # D455 KHÔNG hỗ trợ confidence → tắt
+
+enable_infra: false      # Tắt infra tổng
+enable_infra1: false     # Tắt infra trái
+enable_infra2: false     # Tắt infra phải
+enable_fisheye: false    # D455 không có fisheye
+
+enable_gyro: false       # Không dùng IMU → tắt
+enable_accel: false      # Không dùng IMU → tắt
+enable_pose: false       # Chỉ có ở T265
+
+# -------- Resolution --------
+color_width: 640
+color_height: 480
+
+depth_width: 640
+depth_height: 480
+
+# Infra & confidence giữ lại cho đủ param, dù đã disable
+confidence_width: 640
+confidence_height: 480
+
+infra_width: 848
+infra_height: 480
+
+# -------- FPS --------
+color_fps: 30
+depth_fps: 30
+
+confidence_fps: 0        # Không dùng → set 0
+infra_fps: 0             # Không dùng → set 0
+
+gyro_fps: 0
+accel_fps: 0
+
+# -------- PointCloud --------
+enable_pointcloud: false       # Không tạo pointcloud
+pointcloud_texture_stream: "RS2_STREAM_COLOR"
+pointcloud_texture_index: 0
+allow_no_texture_points: false
+ordered_pc: false
+
+# -------- Sync & Align --------
+enable_sync: false       # Không cần sync
+align_depth: true        # ✅ BẮT BUỘC cho RGB-D
+
+# -------- TF --------
+publish_tf: true         # Publish TF camera
+tf_publish_rate: 10       # 0 = static TF
+
+# -------- Filters --------
+filters: ""              # Không filter
+# Ví dụ nếu cần:
+# filters: "spatial,temporal"
+
+clip_distance: -1        # Không cắt depth theo khoảng cách
+
+# -------- IMU --------
+unite_imu_method: "none" # Không gộp IMU
+linear_accel_cov: 0.01   # Không ảnh hưởng vì IMU tắt
+
+# -------- Startup --------
+initial_reset: false
+reconnect_timeout: 6.0
+wait_for_device_timeout: -1.0
+
+# -------- Stereo module (Depth tuning) --------
+stereo_module:
+  exposure:
+    "1": 7500             # Exposure manual
+    "2": 1                # 1 = auto exposure ON
+  gain:
+    "1": 16
+    "2": 16
+
+# -------- Odometry --------
+topic_odom_in: "odom_in"
+calib_odom_file: ""
+publish_odom_tf: true

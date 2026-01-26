@@ -1,0 +1,42 @@
+<launch>
+
+  <!-- ========================= -->
+  <!-- Realsense Camera -->
+  <!-- ========================= -->
+  <include file="$(find bringup)/launch/camera.launch">
+    <!-- KHÔNG truyền enable_* -->
+    <!-- TẤT CẢ đã nằm trong camera.yaml -->
+  </include>
+
+  <node
+    pkg="sensors"
+    type="camera_node.py"
+    name="camera_node"
+    output="screen">
+
+
+    <!-- namespace camera (trùng với realsense) -->
+    <param name="camera_ns" value="camera"/>
+
+
+  </node>
+
+  <!-- ========================= -->
+  <!-- RTAB-Map (RGB-D only) -->
+  <!-- ========================= -->
+  <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
+
+    <!-- Topics -->
+    <arg name="rgb_topic"         value="/camera/color/image_raw"/>
+    <arg name="depth_topic"       value="/camera/depth/image_rect_raw"/>
+    <arg name="camera_info_topic" value="/camera/color/camera_info"/>
+
+    <!-- Frames -->
+    <arg name="frame_id"          value="camera_link"/>
+
+    <!-- Sync -->
+    <arg name="approx_sync"       value="true"/>
+
+  </include>
+
+</launch>

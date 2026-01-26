@@ -1,0 +1,52 @@
+<launch>
+
+  <!-- ========================= -->
+  <!-- Arguments -->
+  <!-- ========================= -->
+  <arg name="camera"              default="camera"/>
+  <arg name="serial_no"           default=""/>
+  <arg name="usb_port_id"         default=""/>
+  <arg name="device_type"         default="d455"/>
+  <arg name="config_file"         default="$(find bringup)/config/camera.yaml"/>
+
+  <arg name="external_manager"    default="false"/>
+  <arg name="manager"             default="realsense2_camera_manager"/>
+  <arg name="output"              default="screen"/>
+  <arg name="respawn"             default="false"/>
+
+  <!-- ========================= -->
+  <!-- Camera namespace -->
+  <!-- ========================= -->
+  <group ns="$(arg camera)">
+
+    <!-- Load YAML đúng namespace -->
+    <rosparam command="load" file="$(arg config_file)"/>
+
+    <!-- Nodelet manager -->
+    <node unless="$(arg external_manager)"
+          pkg="nodelet"
+          type="nodelet"
+          name="$(arg manager)"
+          args="manager"
+          output="$(arg output)"
+          respawn="$(arg respawn)" />
+
+    <!-- RealSense camera nodelet -->
+    <node pkg="nodelet"
+          type="nodelet"
+          name="realsense2_camera"
+          args="load realsense2_camera/RealSenseNodeFactory $(arg manager)"
+          output="$(arg output)"
+          respawn="$(arg respawn)">
+
+      <param name="serial_no"     type="str" value="$(arg serial_no)"/>
+      <param name="usb_port_id"   type="str" value="$(arg usb_port_id)"/>
+      <param name="device_type"   type="str" value="$(arg device_type)"/>
+
+    </node>
+
+  </group>
+
+  <!-- ========================= -->
+
+</launch>
