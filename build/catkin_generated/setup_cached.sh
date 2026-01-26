@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/tung/cnn2025_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/home/tung/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu'
+export PKG_CONFIG_PATH='/home/tung/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/aarch64-linux-gnu/pkgconfig'
 export PWD='/home/tung/cnn2025_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/tung/cnn2025_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/tung/cnn2025_ws/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH='/home/tung/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'

@@ -2,4 +2,4 @@
 source_root_dir = '/home/tung/cnn2025_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/tung/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/tung/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/tung/cnn2025_ws/devel;/home/tung/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/tung/cnn2025_ws/devel;/home/tung/catkin_ws/devel;/opt/ros/noetic' != '' else []
