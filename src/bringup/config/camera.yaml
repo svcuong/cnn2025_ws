@@ -60,7 +60,7 @@ align_depth: true        # ✅ BẮT BUỘC cho RGB-D
 
 # -------- TF --------
 publish_tf: true         # Publish TF camera
-tf_publish_rate: 0       # 0 = static TF
+tf_publish_rate: 10       # 0 = static TF
 
 # -------- Filters --------
 filters: ""              # Không filter

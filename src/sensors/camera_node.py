@@ -23,8 +23,8 @@ class RealSenseSubscriberNode:
         self.depth_topic = f"/{self.camera_ns}/depth/image_rect_raw"
         self.color_info_topic = f"/{self.camera_ns}/color/camera_info"
 
-        self.bridge = CvBridge()
 
+        self.bridge = CvBridge()
         # ===============================
         # Subscribers
         # ===============================
