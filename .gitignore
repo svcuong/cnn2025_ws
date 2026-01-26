@@ -1,4 +1,6 @@
 build/
 devel/
 install/
-
+.vscode/
+frames.gv/
+frames.pdf/
